@@ -14,11 +14,11 @@ Typical use cases:
 - scheduled or CI/CD jobs
 
 ## Platform APIs and authentication
-Platform APIs require authentication ([see details](https://docs.veracity.com/pages/data-platform/access-and-security/authentication?utm_source=veracity-docs). For automated integrations, scripts, and backend services, you normally use a service account with [the OAuth 2.0 client credentials flow](https://docs.veracity.com/pages/data-platform/access-and-security/authentication#user-content-client-credential-flow).
+Platform APIs require authentication ([see details](https://docs.veracity.com/pages/data-platform/access-and-security/authentication?utm_source=veracity-docs)). For automated integrations, scripts, and backend services, you normally use a service account with [the OAuth 2.0 client credentials flow](https://docs.veracity.com/pages/data-platform/access-and-security/authentication#user-content-client-credential-flow).
 
 The platform also supports the authorization code flow for scenarios where an individual user signs in and grants access.
 
-To use the client credentials flow, you must [create a service account]((https://docs.veracity.com/pages/application-user-guides/veracity-data-workbench/api-management).
+To use the client credentials flow, you must [create a service account](https://docs.veracity.com/pages/application-user-guides/veracity-data-workbench/api-management).
 
 ## Service account credentials
 When you create a service account, the platform generates the credentials your code uses to authenticate API requests:
