@@ -13,6 +13,12 @@ Typical use cases:
 - ingestion or integration scripts
 - scheduled or CI/CD jobs
 
+## Platform APIs and authentication
+Platform APIs require authentication ([see details](https://docs.veracity.com/pages/data-platform/access-and-security/authentication?utm_source=veracity-docs). For automated integrations, scripts, and backend services, you normally use a service account with [the OAuth 2.0 client credentials flow](https://docs.veracity.com/pages/data-platform/access-and-security/authentication#user-content-client-credential-flow).
+
+The platform also supports the authorization code flow for scenarios where an individual user signs in and grants access.
+
+To use the client credentials flow, you must [create a service account]((https://docs.veracity.com/pages/application-user-guides/veracity-data-workbench/api-management).
 
 ## Service account credentials
 When you create a service account, the platform generates the credentials your code uses to authenticate API requests:
@@ -46,7 +52,7 @@ If you are familiar with Microsoft Entra ID (Azure AD) or OAuth 2.0, the followi
 | **Platform APIs** | Resource server / Protected API | The API that requires a valid access token |
 | **API access** | Application permissions | Permissions granted directly to the application by an admin |
 | **Workspace access level (Reader/Admin)** | App roles / RBAC roles | Defines what the application is allowed to do |
-| **Access to data sets** | Scoped permissions | Restricts access to specific resources |
+| **Access to datasets** | Scoped permissions | Restricts access to specific resources |
 | **Authorization code flow** | Delegated flow | Flow where a user signs in and grants access |
 | **API key** | *(Not part of OAuth)* | Platform-specific key used for routing, subscription, or context |
 | **Base URL** | API endpoint / Resource URL | The base address of the API |
